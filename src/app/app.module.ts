@@ -9,6 +9,8 @@ import { EventComponent } from './event/event/event.component';
 import { ServiceProviderComponent } from './service-provider/service-provider/service-provider.component';
 import { LoginComponent } from './core/auth/pages/login/login.component';
 import { RegistrationComponent } from './core/auth/pages/registration/registration.component';
+import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './core/auth/pages/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { RegistrationComponent } from './core/auth/pages/registration/registrati
     EventComponent,
     ServiceProviderComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
